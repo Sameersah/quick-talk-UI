@@ -1,0 +1,101 @@
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    padding: 15px;
+    background-color: #075e54;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Message Bubble */
+  .message-bubble {
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #dcf8c6;
+    border-radius: 8px;
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Sent messages (right-aligned) */
+  .message-bubble.self {
+    background-color: #e5e5ea;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  /* Received messages (left-aligned) */
+  .message-bubble.other {
+    background-color: #dcf8c6;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  /* Sender name (left-aligned for both sent and received) */
+  .message-bubble .sender-name {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;  /* Always left-align the sender's name */
+  }
+  
+  /* Input Area */
+  .chat-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .send-button {
+    background-color: #075e54;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #128c7e;
+  }
+  
